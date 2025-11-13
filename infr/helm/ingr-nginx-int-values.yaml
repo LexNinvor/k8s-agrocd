@@ -1,0 +1,9 @@
+controller:
+  service:
+    annotations:
+      metallb.universe.tf/address-pool: metallb-pool-internal
+  ingressClassResource:
+    name: nginx-internal
+    controllerName: "k8s.io/ingress-nginx-internal"
+    enabled: true
+  ingressClass: nginx-internal

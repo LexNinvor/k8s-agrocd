@@ -1,0 +1,5 @@
+defaultSettings:
+  createDefaultDiskLabeledNodes: true
+
+preUpgradeChecker:
+  jobEnabled: false

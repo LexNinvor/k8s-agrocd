@@ -15,9 +15,9 @@ spec:
     targetRevision: 1.9.1
     helm:
       valueFiles:
-      - $values/infra/helm/longhorn-values.yaml
+      - $values/infr/helm/longhorn-values.yaml
 
-  - repoURL: 'https://github.com/CuteAnimeGirl/argocd-studying.git'
+  - repoURL: 'https://github.com/LexNinvor/k8s-agrocd.git'
     targetRevision: master
     ref: values
   

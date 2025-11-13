@@ -10,9 +10,9 @@ spec:
   project: default
 
   source:
-    repoURL: 'https://github.com/CuteAnimeGirl/agrocd-studying.git'
+    repoURL: 'https://github.com/LexNinvor/k8s-agrocd.git'
     targetRevision: master
-    path: infra/applications
+    path: infr/applications
 
   destination:
     server: https://kubernetes.default.svc

@@ -15,9 +15,9 @@ spec:
     targetRevision: 4.13.2
     helm:
       valueFiles:
-      - $values/infra/helm/ingr-nginx-ext-values.yaml
+      - $values/infr/helm/ingr-nginx-ext-values.yaml
 
-  - repoURL: 'https://github.com/CuteAnimeGirl/argocd-studying.git'
+  - repoURL: 'https://github.com/LexNinvor/k8s-agrocd.git'
     targetRevision: master
     ref: values
   

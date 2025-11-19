@@ -10,9 +10,9 @@ spec:
   project: default
   
   sources:
-  - repoURL: 'https://charts.longhorn.io'
+  - repoURL: 'oci://harbor.lan/library/longhorn'
     chart: longhorn
-    targetRevision: 1.9.1
+    targetRevision: 1.10.1
     helm:
       valueFiles:
       - $values/infr/helm/longhorn-values.yaml

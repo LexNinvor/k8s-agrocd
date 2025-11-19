@@ -9,10 +9,17 @@ metadata:
 spec:
   project: default
 
-  source:
-    repoURL: 'https://metallb.github.io/metallb'
+  sources:
+  - repoURL: 'oci://harbor.lan/library/metallb'
     chart: metallb
     targetRevision: 0.15.2
+    helm:
+      valueFiles:
+      - $values/infr/helm/metallb-values.yml
+
+  - repoURL: 'https://github.com/LexNinvor/k8s-agrocd.git'
+    targetRevision: master
+    ref: values
 
   destination:
     server: https://kubernetes.default.svc

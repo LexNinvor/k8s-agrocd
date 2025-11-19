@@ -1,3 +1,10 @@
+imagePullSecrets:
+  - name: harbor-registry-secret
+
+global:
+  image:
+    registry: harbor.lan/registry.k8s-cache
+
 controller:
   service:
     annotations:

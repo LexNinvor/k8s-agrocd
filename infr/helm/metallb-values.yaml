@@ -1,0 +1,18 @@
+imagePullSecrets:
+  - name: harbor-registry-secret
+
+prometheus:
+  rbacProxy:
+    repository: harbor.lan/gcr-cache/kubebuilder/kube-rbac-proxy
+
+controller:
+  image:
+    repository: harbor.lan/quay-cache/metallb/controller
+
+speaker:
+  image:
+    repository: harbor.lan/quay-cache/metallb/speaker
+
+  frr:
+    image:
+      repository: harbor.lan/quay-cache/frrouting/frr

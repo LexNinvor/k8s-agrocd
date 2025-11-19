@@ -15,7 +15,7 @@ spec:
     targetRevision: 0.15.2
     helm:
       valueFiles:
-      - $values/infr/helm/metallb-values.yml
+      - $values/infr/helm/metallb-values.yaml
 
   - repoURL: 'https://github.com/LexNinvor/k8s-agrocd.git'
     targetRevision: master
